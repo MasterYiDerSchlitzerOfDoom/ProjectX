@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blank Standard HTML5 Web App Template</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/allstocks.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,900,400' rel='stylesheet' type='text/css'>
+    
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <style> 
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport {             width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport {             user-zoom: fixed ; min-zoom: 100% ; }
+       
+    </style>
+    
+</head>
+<body>
+    <iframe src="chart.html" class="iframe" scrolling="no" seamless>
+    
+    </iframe> 
+    <input type="text" value="AMOUNT" class="amount" onchange="sum();" id="qty">
+    <input type="text" id="result" class="result" disabled>
+    
+    <script>
+        function sum( ){
+           var k = document.getElementById('qty').value;
+        document.getElementById('result').value = "= " + k*12.67 + "€";
+        }
+    </script>
+    
+    <div class="footer">
+        <div class="footer_element">
+        A
+        </div>
+        <div class="footer_element">
+        B
+        </div>
+        <div class="footer_element">
+        C
+        </div>
+        <div class="footer_element">
+        D
+        </div>
+        <div class="footer_element">
+        E
+        </div>
+</body>
+</html>

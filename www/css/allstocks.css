@@ -1,0 +1,132 @@
+.box{
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    border-color: #E84F4F;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    margin-top 20px;
+}
+
+@font-face{
+    font-family: 'robotothin';
+    src: url(font/Roboto-Thin-webfont.ttf);
+}
+
+@font-face{
+    font-family: 'robotolight';
+    src: url(font/Roboto-Light-webfont.ttf);
+}
+
+@font-face{
+    font-family: 'robotoblack';
+    src: url(font/Roboto-Black-webfont.ttf);
+}
+
+.footer{ 
+    background-color: grey;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    margin-left: -7px;
+}
+
+
+.footer_element{
+    height: 50px;
+    color: white;
+    border-right-width: 1px;
+    border-right-color: #545454;
+    border-right-style: solid;
+    width: 19.5%;
+    text-align: center;
+    padding-top: 15px;
+    font-family:sans-serif;
+    font-weight:900;
+    float:left;
+
+}
+
+.placeholder{
+    height: 10px;
+    width: 100%;
+}
+
+.company_title{
+    font-family: robotoblack;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight:900;
+    color: #3C3C3B;
+}
+
+.details_value{
+    font-family:robotolight;
+    font-weight:400;
+    color: #3C3C3B;
+    font-size: 17px;
+    letter-spacing: 4px;
+}
+
+.details_percent_positiv{
+    font-family: robotolight;
+    font-weight:100;
+    font-size: 17px;
+    letter-spacing: 4px;
+    color: #7BBA4A;
+    float: right;
+}
+
+.chart{
+    background-color: #5DC2D6;
+    width: 100%;
+    height: 200px;
+}
+
+.amount{
+    border-radius: 3px;
+    background-color: #E84F4F;
+    color: #480F0F;
+    font-family: 'roboto';
+    font-weight: 900;
+    width: 50%;
+    font-size: 25px;
+    margin-left: 25%;
+    height: 30px;
+    border-width: 0px;
+    margin-top: 30px;
+}
+
+.result{
+    width: 100%;
+    text-align: center;
+    background-color:transparent;
+    border-width: 0px;
+    font-family: 'roboto';
+    font-weight: 900;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.iframe{
+    border-width: 1px;
+    width: 100%;
+    background-color: #5DC2D6;
+    height: 200px;
+    overflow: hidden;
+}
+
+.value_change{
+    float: right;
+    font-family: robotolight;
+    color: #3C3C3B;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+
+
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blank Standard HTML5 Web App Template</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/allstocks.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,900,400' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <style> 
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport {             width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport {             user-zoom: fixed ; min-zoom: 100% ; }
+       
+    </style>
+    <script src="cordova.js" id="xdkJScordova_"></script>
+    <script id="xdkJSonDeviceReady_">
+        function onDeviceReady() {                                          // ignored by "Standard HTML5 web app"
+            if( navigator.splashscreen && navigator.splashscreen.hide ) {   // Cordova hide splashscreen detected, use it
+                navigator.splashscreen.hide() ;
+            }
+        }
+        document.addEventListener("deviceready", onDeviceReady, false) ;    // ignored by "Standard HTML5 web app"
+    </script>
+    <script type="text/javascript">
+        function info( ){
+            alert('Hier müsste ein Datenbank-Script sein');
+            //window.location.href='all_stocks.html';
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="box" onclick="window.location.href='stock_buy.html'">
+        <a class="company_title">
+           Xstrata
+        </a>
+        <a class="value_change">
+           + 34.65€
+        </a>
+        <br>
+        <a class="details_value">34.81€</a><a class="details_percent_positiv">+2.09%</a>
+    </div>
+     <div class="placeholder"></div>
+    <div class="box" onclick="window.location.href='stock_buy.html'">
+        <a class="company_title">
+           Umbrella Corp.
+        </a>
+        <a class="value_change">
+           + 0.45€
+        </a>
+        <br>
+        <a class="details_value">51.94€</a><a class="details_percent_positiv">+4.01%</a>
+    </div>
+    
+    
+    <div class="footer">
+        <div class="footer_element" onclick="window.location.href='all_stocks.html'">
+        A
+        </div>
+        <div class="footer_element" onclick="window.location.href='my_stocks.html'">
+        B
+        </div>
+        <div class="footer_element">
+        C
+        </div>
+        <div class="footer_element">
+        D
+        </div>
+        <div class="footer_element">
+        E
+        </div>
+    </div>
+</body>
+</html>

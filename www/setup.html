@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blank Standard HTML5 Web App Template</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,900,400' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <style> 
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport {             width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport {             user-zoom: fixed ; min-zoom: 100% ; }
+       
+    </style>
+    <script src="cordova.js" id="xdkJScordova_"></script>
+    <script id="xdkJSonDeviceReady_">
+        function onDeviceReady() {                                          // ignored by "Standard HTML5 web app"
+            if( navigator.splashscreen && navigator.splashscreen.hide ) {   // Cordova hide splashscreen detected, use it
+                navigator.splashscreen.hide() ;
+            }
+        }
+        document.addEventListener("deviceready", onDeviceReady, false) ;    // ignored by "Standard HTML5 web app"
+    </script>
+    <script type="text/javascript">
+        function info( ){
+            //alert('Hier müsste ein Datenbank-Script sein');
+            window.location.href='all_stocks.html';
+        }
+    </script>
+</head>
+<body>
+   <p class="title" >Project X</p>
+    <input type="text" value="Your Name" class="setup_text_input">
+    <input type="text" value="Company Name" class="setup_text_input">
+    <input type="submit" value="OKAY" class="setup_submit" onclick="info();">
+</body>
+</html>
